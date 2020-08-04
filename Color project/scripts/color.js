@@ -37,15 +37,15 @@
 				easyButton.classList.add("easyHard");
 				hardButton.classList.remove("easyHard");
 				num = 3;
-				//új színeket tesz a colors arraybe
+				//new color to the colors arraybe
 				colors = generateRandomColors(num);
 				
-				//új random colort választ
+				//new random colort 
 				pickedColor = pickRandomColor();
 				
-				//eszerint megváltoztatja a colorDisplayt
+				//olorDisplay is changed
 				colorDisp.textContent = pickedColor;
-				//újra színezi a négyzeteket
+				//new color to the squares
 				squareColoring();
 				
 				for(var i = 3; i < squares.length; i++){
@@ -62,16 +62,16 @@
 				hardButton.classList.add("easyHard");
 				easyButton.classList.remove("easyHard");
 				num = 6;
-				//újratöltjük a colors arrayt 
+				//reset the colors array
 				colors = generateRandomColors(num);
 				
-				//új random colort választunk
+				//new random color
 				pickedColor = pickRandomColor();
 				
-				//eszerint megváltoztatjuk a kiírt színt
+				//displayed color is changed
 				colorDisp.textContent = pickedColor;
 				
-				//újraszínezi a négyzeteket
+				//squares get new color
 				squareColoring();
 			
 			});
@@ -130,9 +130,8 @@
 		}
 		//picking one color from colors array
 		function pickRandomColor(){
-		// pl : 0 és 6 között akarunk számokat akkor 1-el többel kell megszorozni, a Math.floor, pedig leveszi a tizedesjegyeket 			Math.floor(Math.random() * 7);
 		
-		//a colors length-et kell használjuk, mert nem tudhatjuk mennyi szín van a tömbünkben
+		//a colors length-et bc the number of colors are changeable
 			var random = Math.floor(Math.random()* colors.length);
 			console.log(colors[random]);
 			return colors[random];
