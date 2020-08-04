@@ -64,12 +64,8 @@
 				-moz-transition: all 0.3s;
 				outline: none;
 				
-				<!-- transition: all 0.3s; ha bármelyik property-je (all) megváltozik akkor az x másodperc legyen mire átváltozik -->
 				
-				<!--border-radius: 15% - lekerekíti a négyzet sarkait -->
-				<!-- a body-ban a margin: 0;ha van egy kis csík oldalt és felül akkor ez eltünteti -->
 				
-				<!--transition: background 2.0s; ha a background megváltozik az x mpbe teljen -->
 				
 				
 				
@@ -80,4 +76,3 @@
 				background-color: steelblue;
 			}
 			
-		<!-- a height: 100%: ez benne van a stripe-ban ami 30px és ez a 100% azt mondja neki hogy annak a 30px-nek a 100%át vegye fel, így lesz egyforma -->
